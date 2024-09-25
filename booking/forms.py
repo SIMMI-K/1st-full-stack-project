@@ -5,7 +5,7 @@ from datetime import datetime, date
 from .models import DanceBooking
 
 
-class BookingForm(forms.ModelForm):
+class DanceBookingForm(forms.ModelForm):
     """
     Form for creating and updating booking instances.
 

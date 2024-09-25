@@ -6,12 +6,12 @@ from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.views.generic import UpdateView, DeleteView
 from django.contrib import messages
 from .models import DanceBooking
-from .forms import BookingForm
+from .forms import DanceBookingForm
 
 # Views
 
 @login_required
-def dance_bookings(request):
+def booking_view(request):
     """
     Renders the Dance Booking page where users can view and book dance classes.
 
@@ -25,7 +25,7 @@ def dance_bookings(request):
         booking requests.
 
     **Template**
-        :template:`booking/dance_booking.html`
+        :template:`booking/booking.html`
     """
     if request.method == "POST":
         booking_form = DanceBookingForm(data=request.POST)
@@ -38,7 +38,7 @@ def dance_bookings(request):
                 messages.SUCCESS,
                 "Booking submitted! You will be notified once confirmed.",
             )
-            return HttpResponseRedirect(reverse("dance_bookings"))
+            return HttpResponseRedirect(reverse("booking"))
     else:
         booking_form = DanceBookingForm()
 
@@ -49,7 +49,7 @@ def dance_bookings(request):
 
     return render(
         request,
-        "booking/dance_booking.html",
+        "booking/booking.html",
         {
             "bookings": bookings,
             "booking_form": booking_form,
@@ -73,7 +73,7 @@ class EditDanceBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     model = DanceBooking
     template_name = "booking/edit_dance_booking.html"
-    form_class = BookingForm
+    form_class = DanceBookingForm
     success_url = "/booking/"
 
     def form_valid(self, form):
