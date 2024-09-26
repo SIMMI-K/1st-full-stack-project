@@ -1,3 +1,7 @@
+/*Mobile first styling approach was used*/
+/*Importing Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
 body {
     background-color: #F9FAFC;
 }
@@ -5,16 +9,17 @@ body {
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 900;
     color: #4A4A4F;
 }
 
-.red-an {
-    color: #E84610;
-}
 
 .thin {
     font-weight: 300;
+    color: #fef2d8;
+    background-color: #9e1452;
+    padding: 2px 6px;
+    margin-left: 4px;
 }
 
 .light-bg {
@@ -91,6 +96,7 @@ body {
     z-index: 100;
 }
 
+
 .post-link {
     text-decoration: none;
     color: #445261;
@@ -98,7 +104,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: black;
 }
 
 .post-title {
@@ -111,11 +117,23 @@ body {
     color: lightgray;
 }
 
+/* custom button style */
 .btn-signup,
-.btn-edit {
-    background-color: #188181;
-    color: #fff;
-}
+.btn-reset {
+    background-color: #ffbe98;
+    color: black;
+    font-weight: 500;
+    margin: 2px;
+  }
+
+.btn-edit, .btn-edit-booking {
+    background-color: #ffbe98;
+    color: black;
+    font-weight: 500;
+    width: 32%;
+    font-size: 0.8rem;
+  }
+  
 
 .btn-signup:hover,
 .btn-signup:active {
@@ -123,9 +141,35 @@ body {
     color: #23BBBB;
 }
 
+/* custom button style */
+.btn-signin,
+.btn-signout,
+.btn-register {
+  background-color: #ffbe98;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.btn-signin:hover,
+.btn-signin:active,
+.btn-booking:active {
+  background-color: #fff;
+  color: #23bbbb;
+}
+
+.signin-bg {
+  background-color: #13b685;
+  border-radius: 35px;
+  width: 90%;
+  padding: 2%;
+  margin: 0 auto;
+  margin-bottom: 0.5re
+}
+
 .link {
-    color: #23BBBB;
-    text-decoration: none;
+  color: #146c6c;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .link:hover,
@@ -140,11 +184,22 @@ body {
     background: transparent;
 }
 
+/* custom delete button style */
 .btn-delete {
-    color: #fff;
-    background: #E84610;
+  color: black;
+  background: #fe61a6;
+  font-weight: 500;
+  font-size: 0.8rem;
+  width: 32%;
 }
-
+/* custom button style */
+.btn-delete:hover,
+.btn-edit:hover,
+.btn-delete-booking:hover,
+.btn-edit-booking:hover {
+  background: #fcd885;
+  border: none;
+}
 .btn-like:hover,
 .btn-like:active {
     color: #E84610;
@@ -159,3 +214,417 @@ body {
 .approval {
     color: rgb(222, 146, 168);
 }
+
+/* style for navbar items */
+.nav-item {
+    font-size: 114%;
+    font-weight: bold;
+    padding: 0.1rem 1.2rem 1.1rem 1.2rem;
+}
+
+#login-button a {
+    color: #2c4bfe;
+    font-size: 115%;
+    font-weight: bold;
+    padding: 0.1rem 1.2rem 2rem 1.2rem;
+}
+  
+#logout-button a {
+    color: #2c4bfe;
+    font-size: 115%;
+    font-weight: bold;
+    padding: 0.1rem 1.2rem 2rem 1.2rem;
+}
+  
+#register-button a {
+    color: #2c4bfe;
+    font-size: 115%;
+    font-weight: bold;
+    padding: 0.1rem 1.2rem 2rem 1.2rem;
+}
+  
+.navbar-text {
+    font-size: 110%;
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+/* hero image and cover text */
+#hero-outer {
+    height: 54vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.hero-image {
+  height: 54vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+/* creating a zoom for the hero image */
+@keyframes hero-zoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* cover text on hero image */
+.cover-text {
+  background-color: rgba(33, 33, 33, 0.9);
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+  top: 5vh;
+  padding: 8px 7px 0px 7px;
+  text-align: center;
+  border-radius: 3px;
+  width: 78%;
+}
+
+.cover-text > h1 {
+  color: #fef2d8;
+  padding-top: 8px;
+  font-size: 1.5rem;
+}
+
+.cover-text > h2 {
+  color: #fef2d8;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* style for loggedin in or out indicator */
+.loggedin-container {
+  display: flex;
+  justify-content: flex-end;
+}
+/* style for loggedin in or out indicator */
+.logged-in {
+  font-weight: 500;
+  background-color: #ffeaec;
+  font-size: 115%;
+  padding: 4px 8px;
+  margin-right: 2%;
+  border-radius: 10px;
+}
+
+.commenter-style {
+  font-weight: bold;
+}
+/* button on the booking confirm delete page */
+.deletion-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 2px;
+  margin: 4vh;
+}
+/* style for password directions on register form */
+#hint_id_password1 ul {
+  padding: 4px 0px 0px 0px;
+  list-style-type: none;
+}
+
+#signup_form li {
+  padding: 4px 0px 0px 0px;
+  list-style-type: none;
+}
+/* custom footer style */
+.footer-section {
+  background-color: #ffbe98;
+}
+
+.social-icon {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  color: #fe2c89;
+}
+
+.footer-text {
+  color: black;
+  font-size: 110%;
+  font-weight: 500;
+}
+
+.contact-text-email {
+  color: black;
+  font-size: 102%;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.contact-text-email a {
+  color: #692d5d;
+}
+
+.contact-text {
+  color: black;
+  font-size: 102%;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+/* media query: tablets and larger (375px and up) */
+@media screen and (min-width: 375px) {
+  .brand {
+    font-family: Lato, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: #4a4a4f;
+}
+
+.btn-delete,
+.btn-delete-booking {
+    color: black;
+    background: #fe61a6;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 32%;
+}
+
+.btn-edit,
+.btn-edit-booking {
+    background-color: #ffbe98;
+    color: black;
+    font-weight: 500;
+    width: 32%;
+    font-size: 1rem;
+}
+/* media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+  .cover-text {
+    background-color: rgba(33, 33, 33, 0.9);
+    font-family: "Quicksand", sans-serif;
+    position: absolute;
+    font-size: 130%;
+    top: auto;
+    bottom: 25vh;
+    min-height: 116px;
+    padding: 8px 15px 0px 15px;
+    text-align: center;
+    left: 22%;
+    right: 22%;
+    border-radius: 30px;
+    width: auto;
+}
+
+.cover-text > h2 {
+    color: #fef2d8;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.sign-in-form {
+    display: flex;
+    justify-content: center;
+}
+
+/* light-pink booking item card */
+.booking-item {
+  margin-top: 1rem;
+  background-color: #ffeaec;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+/* style for loggedin in or out indicator */
+.loggedin-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* style for loggedin in or out indicator */
+.logged-in {
+  font-weight: 500;
+  background-color: #ffeaec;
+  font-size: 115%;
+  padding: 4px 8px;
+  margin-right: 2%;
+  border-radius: 10px;
+}
+
+.commenter-style {
+  font-weight: bold;
+}
+/* style for edit form on edit_dance_booking.html */
+  .edit-form {
+    width: 55%;
+  }
+
+  .you-sure {
+    font-size: 1.5rem;
+  }
+}
+/* large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+.nav-item a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+#login-button a:hover {
+    border-bottom: 1px solid #2c4bfe;
+}
+
+#logout-button a:hover {
+    border-bottom: 1px solid #2c4bfe;
+}
+
+#register-button a:hover {
+    border-bottom: 1px solid #2c4bfe;
+}
+
+.cover-text {
+    background-color: rgba(33, 33, 33, 0.9);
+    font-family: "Quicksand", sans-serif;
+    font-size: 130%;
+    position: absolute;
+    bottom: 24vh;
+    min-height: 120px;
+    padding: 8px 15px 0px 15px;
+    text-align: center;
+    left: 30%;
+    right: 30%;
+    border-radius: 35px;
+}
+
+.cover-text > h1 {
+    color: #fef2d8;
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+.brand {
+    font-family: Lato, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #4a4a4f;
+    padding-bottom: 0.5rem;
+}
+
+.nav-item {
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0.1rem 0.8rem 0.2rem 0.8rem;
+}
+
+#login-button a {
+    color: #2c4bfe;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0.1rem 1.1rem 0.2rem 1.1rem;
+}
+
+#logout-button a {
+    color: #2c4bfe;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0.1rem 1.1rem 0.2rem 1.1rem;
+}
+
+#register-button a {
+    color: #2c4bfe;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0.1rem 1.1rem 0.2rem 1.1rem;
+}
+
+.navbar-text {
+    font-size: 112%;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.signin-bg {
+    background-color: #13b685;
+    border-radius: 35px;
+    width: 45%;
+    padding: 2%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.sgn-in-form {
+    display: flex;
+    justify-content: center;
+}
+
+/* style for edit form on edit_dance_booking.html */.edit-form {
+    width: 50%;
+}
+
+.deletion-btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2px;
+    margin: 4vh;
+ }
+}
+/* very large devices (large laptop screens and monitors, 1440px and up) */
+@media screen and (min-width: 1440px) {
+.cover-text {
+    background-color: rgba(33, 33, 33, 0.9);
+    font-family: "Quicksand", sans-serif;
+    font-size: 130%;
+    position: absolute;
+    bottom: 24vh;
+    min-height: 120px;
+    padding: 8px 15px 0px 15px;
+    text-align: center;
+    left: 35%;
+    right: 35%;
+    border-radius: 35px;
+}
+  
+.cover-text > h1 {
+    color: #fef2d8;
+    padding-top: 12px;
+    font-size: 1.5rem;
+}
+  
+.brand {
+    font-family: Lato, sans-serif;
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: #4a4a4f;
+    padding: 0rem 0rem 0.5rem 0.5rem;
+}
+  
+.nav-item {
+    font-size: 132%;
+    font-weight: bold;
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+}
+  
+#login-button a {
+    color: #2c4bfe;
+    font-size: 132%;
+    font-weight: bold;
+    padding: 0.2rem 1.1rem 0.2rem 1.1rem;
+}
+  
+#logout-button a {
+    color: #2c4bfe;
+    font-size: 132%;
+    font-weight: bold;
+    padding: 0.2rem 1.1rem 0.2rem 1.1rem;
+}
+  
+#register-button a {
+    color: #2c4bfe;
+    font-size: 132%;
+    font-weight: bold;
+    padding: 0.2rem 1.1rem 0.2rem 1.1rem;
+}
+  
+.navbar-text {
+    font-size: 130%;
+    padding: 2rem 1rem 2.2rem 1rem;
+ }
+}  
