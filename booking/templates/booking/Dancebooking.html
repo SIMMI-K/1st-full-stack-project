@@ -37,8 +37,8 @@
             <div class="booking-message">{{ booking.message | linebreaks }}</div>
             <hr />
             <div class="text-center">
-              <a href="{% url 'edit_booking' booking.id %}" class="btn btn-edit-booking">Edit</a>
-              <a href="{% url 'delete_booking' booking.id %}" class="btn btn-delete-booking">Delete</a>
+              <a href="{% url 'edit_dance_booking' booking.id %}" class="btn btn-edit-booking">Edit</a>
+              <a href="{% url 'delete_dance_booking' booking.id %}" class="btn btn-delete-booking">Delete</a>
             </div>
           </div>
           {% endfor %} 

@@ -49,7 +49,7 @@ def booking_view(request):
 
     return render(
         request,
-        "booking/booking.html",
+        "booking/Dancebooking.html",
         {
             "bookings": bookings,
             "booking_form": booking_form,
@@ -57,7 +57,7 @@ def booking_view(request):
     )
 
 
-class EditDanceBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+class Edit_dance_Booking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     Allows users to edit their dance class bookings.
 
@@ -96,7 +96,7 @@ class EditDanceBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return (self.request.user == booking.username or self.request.user.is_superuser)
 
 
-class DeleteDanceBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+class Delete_dance_Booking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """
     Allows users to delete their dance class bookings.
 

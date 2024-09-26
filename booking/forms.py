@@ -5,6 +5,8 @@ from datetime import datetime, date
 from .models import DanceBooking
 
 
+
+
 class DanceBookingForm(forms.ModelForm):
     """
     Form for creating and updating booking instances.
@@ -53,7 +55,7 @@ class DanceBookingForm(forms.ModelForm):
                 and start_time < datetime.now().time()):
             raise ValidationError("Please select a time in the future.")
 
-        existing_bookings = Booking.objects.filter(
+        existing_bookings = DanceBooking.objects.filter(
             date_of_booking=date_of_booking, start_time=start_time
         ).exclude(id=self.instance.id)
 
