@@ -105,12 +105,12 @@ AC2 Given a logged in user, they can disapprove a comment
 
 #### Mobile
 
-![Index iPhone SE](docs/readme_images/wireframe of home phone view.PNG)
+![Index iPhone SE]<img src="docs/readme_images/wireframe of home phone view.PNG">
 
 #### Tablet
 
-![Index Tablet](docs/readme_images/wireframe home tablet.PNG)
+![Index Tablet]<img src="docs/readme_images/wireframe home tablet.PNG">
 
 #### Monitor
 
-![Index Monitor](docs/readme_images/browser home wireframe.PNG)
+![Index Monitor]<img src="docs/readme_images/browser home wireframe.PNG">
