@@ -26,8 +26,40 @@ DanceZone’s goal is to inspire, educate, and connect dance enthusiasts while o
    * [Epics](#epics)
    * [User stories](#user-stories)
 
+-[Features](#features)
+
 - [Wireframes](#wireframes)
    * [Index page wireframes](#index-page-wireframes)
+
+## User experience (UX)
+
+### Key project goals
+
+-Increase awareness of the DanceZone brand through a feel-good and accessible website that offers information about all things dance, including various styles and techniques, through blog posts.
+-Build a website that encourages and guides users to book dance lessons, or sign up for events directly through the platform.
+
+### Target audience
+
+-Users who are interested in current dance trends, techniques, and tutorials.
+-Users who would like to book dance lessons, choreography, or dance performances for an upcoming event.
+
+### User requirements and expectations
+
+- An intuitively structured and visually appealing website that is easy to read on all screen sizes
+- Navigation that is easy to use and understand whether using mobile, tablet or monitor
+- Ability to quickly understand the purpose of the website
+- An ability to register, login and logout
+- An ability to interact with content by commenting
+- An ability to read comments that have been made under blogs
+- An ability to update and delete comments if desired
+- An ability to find relevant information on the business and its services
+- An ability to make a booking for a dance style
+- An ability to see a list of their own bookings
+- An ability to update and delete bookings if desired
+- Easy ways to contact the dancezone
+- An accessible website for all users
+
+
 
 ### Epics
 
@@ -105,12 +137,12 @@ AC2 Given a logged in user, they can disapprove a comment
 
 #### Mobile
 
-![Index iPhone SE]<img src="docs/readme_images/wireframe of home phone view.PNG">
+<img src="docs/readme_images/wireframe of home phone view.PNG">
 
 #### Tablet
 
-![Index Tablet]<img src="docs/readme_images/wireframe home tablet.PNG">
+<img src="docs/readme_images/wireframe home tablet.PNG">
 
 #### Monitor
 
-![Index Monitor]<img src="docs/readme_images/browser home wireframe.PNG">
+<img src="docs/readme_images/browser home wireframe.PNG">
