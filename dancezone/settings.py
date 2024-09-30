@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-simmik-1stfullstackproj-k0uzb3xcbcm.ws.codeinstitute-ide.net','.herokuapp.com']
 
@@ -143,6 +143,12 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+
+# Add cloudinary config due to image links using http instead of https
+cloudinary.config(
+    secure=True,
+)
 
 
 # Static files (CSS, JavaScript, Images)

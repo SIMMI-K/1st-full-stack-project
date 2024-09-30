@@ -17,9 +17,17 @@ DanceZone’s goal is to inspire, educate, and connect dance enthusiasts while o
 
 ## Table of contents
 
+- [User experience (UX)](#user-experience-ux)
+   * [Key project goals](#key-project-goals)
+   * [Target audience](#target-audience)
+   * [User requirements and expectations](#user-requirements-and-expectations)
+
 - [Epics and user stories](#epics-and-user-stories)
    * [Epics](#epics)
    * [User stories](#user-stories)
+
+- [Wireframes](#wireframes)
+   * [Index page wireframes](#index-page-wireframes)
 
 ### Epics
 
@@ -90,3 +98,19 @@ Approve comments: As a Site Admin I can approve or disapprove comments so that I
 
 AC1 Given a logged in user, they can approve a comment
 AC2 Given a logged in user, they can disapprove a comment
+
+## Wireframes
+
+### Index page wireframes
+
+#### Mobile
+
+![Index iPhone SE](docs/readme_images/wireframe of home phone view.PNG)
+
+#### Tablet
+
+![Index Tablet](docs/readme_images/wireframe home tablet.PNG)
+
+#### Monitor
+
+![Index Monitor](docs/readme_images/browser home wireframe.PNG)
