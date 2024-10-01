@@ -2,7 +2,7 @@
 
 (Developer: Simmi Keshri)
 
-![AmIResponsive Image]
+![AmIResponsive Image]<img src="![alt text](<docs/readme_images/am i responsive page.PNG>)">
 
 ## Live website
 
@@ -24,7 +24,7 @@ DanceZone’s goal is to inspire, educate, and connect dance enthusiasts while o
 
 - [Epics and user stories](#epics-and-user-stories)
    * [Epics](#epics)
-   * [User stories](#user-stories)
+   * [User stories](#user-stories) 
 
 -[Features](#features)
 
