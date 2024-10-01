@@ -2,7 +2,9 @@
 
 (Developer: Simmi Keshri)
 
-![AmIResponsive Image]<img src="(<docs/readme_images/am i responsive page.PNG>)">
+Am I Responsive
+
+<img src="docs/readme_images/am i responsive page.PNG">
 
 ## Live website
 
