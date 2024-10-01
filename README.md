@@ -2,7 +2,7 @@
 
 (Developer: Simmi Keshri)
 
-![AmIResponsive Image]<img src="![alt text](<docs/readme_images/am i responsive page.PNG>)">
+![AmIResponsive Image]<img src="(<docs/readme_images/am i responsive page.PNG>)">
 
 ## Live website
 
