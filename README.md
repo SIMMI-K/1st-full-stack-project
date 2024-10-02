@@ -33,6 +33,9 @@ DanceZone’s goal is to inspire, educate, and connect dance enthusiasts while o
 - [Wireframes](#wireframes)
    * [Index page wireframes](#index-page-wireframes)
 
+- [Database schema](#database-schema)
+   * [Entity relationship diagram](#entity-relationship-diagram)
+
 ## User experience (UX)
 
 ### Key project goals
@@ -148,3 +151,9 @@ AC2 Given a logged in user, they can disapprove a comment
 #### Monitor
 
 <img src="docs/readme_images/browser home wireframe.PNG">
+
+### Entity relationship diagram
+
+In the diagram below it can be seen that User has a relationship to Post, Comment and Booking. Comment has a relationship with both User and Post.
+
+<img src="docs/readme_images/DanceZone ERD.png">
