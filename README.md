@@ -29,8 +29,8 @@ DanceZone’s goal is to inspire, educate, and connect dance enthusiasts while o
    * [Epics](#epics)
    * [User stories](#user-stories) 
 
--[Features](#features)
-    * [Logo and navigation bar](#logo-and-navigation-bar)
+- [Features](#features)
+   * [Logo and navigation bar](#logo-and-navigation-bar)
    * [Hero image](#hero-image)
    * [Django alert messages](#django-alert-messages)
    * [Clear indication as to whether the user is logged in or out at all times](#clear-indication-as-to-whether-the-user-is-logged-in-or-out-at-all-times)
@@ -75,6 +75,7 @@ DanceZone’s goal is to inspire, educate, and connect dance enthusiasts while o
 
 - [Credits](#credits)
    * [Code](#code)
+   * [Media](#media)
 
 - [Acknowledgements](#acknowledgements)
 
@@ -432,7 +433,7 @@ All python code was put through the [CI Python Linter](https://pep8ci.herokuapp.
 | Blog admin      |  <details><summary>Blog Admin</summary><img src="docs/readme_images/blog admin.py.PNG"></details>          | PASS   |
 ## Manual testing
 
-<img src="docs/readme_images/dancezone testing US - Sheet1.pdf">
+Link to spreadsheet[manual testing](docs/readme_images/dancezone testing US - Sheet1.pdf)
 
 ## Deployment
 
@@ -492,7 +493,11 @@ Note: The difference between clone and fork is, you need permissions to push bac
 
 [CHATGPT for many fixes, errors, codes, post descriptions]
 
-[Security_Key]
+### Media
+
+All the media images are taken from; [Adobe Stock] (https://stock.adobe.com/uk/)
+
+### [Security_Key]
 
 I am aware that I accidently pushed security key to github but now I have removed from the settings.py and generated a new key to envy.py file.
 ## Acknowledgements
