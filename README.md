@@ -67,6 +67,7 @@ DanceZone’s goal is to inspire, educate, and connect dance enthusiasts while o
    * [CSS](#css)
    * [JavaScript](#javascript)
    * [Python](#python)
+- [Lighthouse](#lighthouse)
 - [Manual testing](#manual-testing)
 
 - [Deployment](#deployment)
@@ -300,6 +301,16 @@ This project used the "MoSCoW" method to classify its features and requirements 
 
 <img src="docs/readme_images/mosco page.PNG">
 
+### Features which could be implemented in the future
+
+- Booking model can include age group for different dance styles
+
+users can book dance according to the age-groups
+
+- Price features can be added to book different dance styles
+
+users can book dance based on price
+
 ## Wireframes
 
 ### Index page wireframes
@@ -434,6 +445,18 @@ All python code was put through the [CI Python Linter](https://pep8ci.herokuapp.
 ## Manual testing
 
 Link to spreadsheet[manual testing] <a href="docs/readme_images/dancezone testing US - Sheet1.pdf" target="_blank"> manual testing spreadsheet</a>
+
+## Lighthouse
+
+Performance, accessibility, best practices and seo were tested using [lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) in Chrome DevTools.
+
+### Lighthouse results
+
+<img src="docs/readme_images/light house testing.PNG">
+
+### Known bugs
+
+- Currently no known bugs.
 
 ## Deployment
 
