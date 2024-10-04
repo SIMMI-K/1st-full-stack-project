@@ -441,7 +441,12 @@ All python code was put through the [CI Python Linter](https://pep8ci.herokuapp.
 | Blog views      |  <details><summary>Blog Views</summary><img src="docs/readme_images/blog views.py.PNG"></details>          | PASS   |
 | Blog forms      |  <details><summary>Blog Forms</summary><img src="docs/readme_images/blog forms.py.PNG"></details>          | PASS   |
 | Blog urls       |  <details><summary>Blog urls</summary><img src="docs/readme_images/blog urls.py.PNG"></details>            | PASS   |
-| Blog admin      |  <details><summary>Blog Admin</summary><img src="docs/readme_images/blog admin.py.PNG"></details>          | PASS   |
+| Booking admin      |  <details><summary>Booking Admin</summary><img src="docs/readme_images/booking admin.py.PNG"></details>          | PASS   |
+| Booking urls      |  <details><summary>Booking urls</summary><img src="docs/readme_images/url.py booking.PNG"></details>          | PASS   |
+| Blog admin      |  <details><summary>Blog admin</summary><img src="docs/readme_images/blog admin.py.PNG"></details>          | PASS   |
+| Booking forms      |  <details><summary>Booking Forms</summary><img src="docs/readme_images/booking forms.py.PNG"></details>          | PASS   |
+| Booking models      |  <details><summary>Booking models</summary><img src="docs/readme_images/booking models.py.PNG"></details>          | PASS   |
+| Booking views      |  <details><summary>Booking views</summary><img src="docs/readme_images/booking views.py.PNG"></details>          | PASS   |
 ## Manual testing
 
 Link to spreadsheet[manual testing] <a href="docs/readme_images/dancezone testing US - Sheet1.pdf" target="_blank"> manual testing spreadsheet</a>
@@ -453,6 +458,7 @@ Performance, accessibility, best practices and seo were tested using [lighthouse
 ### Lighthouse results
 
 <img src="docs/readme_images/light house testing.PNG">
+
 
 ### Known bugs
 
