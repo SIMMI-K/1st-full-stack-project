@@ -8,6 +8,7 @@ Am I Responsive
 
 ## Live website
 
+Link to live website: [DanceZone](https://dance-zone-0cb3194ed2ff.herokuapp.com/)
 
 ## Purpose of the project
 
@@ -29,9 +30,34 @@ DanceZone’s goal is to inspire, educate, and connect dance enthusiasts while o
    * [User stories](#user-stories) 
 
 -[Features](#features)
+    * [Logo and navigation bar](#logo-and-navigation-bar)
+   * [Hero image](#hero-image)
+   * [Django alert messages](#django-alert-messages)
+   * [Clear indication as to whether the user is logged in or out at all times](#clear-indication-as-to-whether-the-user-is-logged-in-or-out-at-all-times)
+   * [Call to action button](#call-to-action-button)
+   * [A list of blog posts](#a-list-of-blog-posts)
+   * [See an individual blog post in detail](#see-an-individual-blog-post-in-detail)
+   * [Pagination](#pagination)
+   * [Sign in form](#sign-in-form)
+   * [Register form (Sign up)](#register-form-sign-up)
+   * [Sign out page](#sign-out-page)
+   * [Booking page](#booking-page)
+   * [Form with CRUD functionality to booking when logged in](#form-with-crud-functionality-to-book-a-makeover-when-logged-in)
+   * [View the bookings I have made when I am logged in](#view-the-bookings-i-have-made-when-i-am-logged-in)
+   * [Edit the bookings I have made when I am logged in](#edit-the-bookings-i-have-made-when-i-am-logged-in)
+   * [Delete the bookings I have made when I am logged in](#delete-the-bookings-i-have-made-when-i-am-logged-in)
+   * [View comments on posts](#view-comments-on-posts)
+   * [CRUD functionality on comments when logged in](#crud-functionality-on-comments-when-logged-in)
+   * [Footer](#footer)
 
 - [Wireframes](#wireframes)
    * [Index page wireframes](#index-page-wireframes)
+
+- [Technology used](#technology-used)
+   * [Languages and framework](#languages-and-framework)
+   * [Database](#database)
+   * [Technologies and tools](#technologies-and-tools)
+
 
 - [Database schema](#database-schema)
    * [Entity relationship diagram](#entity-relationship-diagram)
@@ -46,6 +72,11 @@ DanceZone’s goal is to inspire, educate, and connect dance enthusiasts while o
 - [Deployment](#deployment)
    * [Pre deployment](#pre-deployment)
    * [Deploying with heroku](#deploying-with-heroku)
+
+- [Credits](#credits)
+   * [Code](#code)
+
+- [Acknowledgements](#acknowledgements)
 
 ## User experience (UX)
 
@@ -149,6 +180,125 @@ AC2 Given a logged in user, they can disapprove a comment
 
 Link to my Github [Project Board](https://github.com/users/SIMMI-K/projects/3/views/1)
 
+## Features
+
+### Logo and navigation bar
+
+A responsive navigation bar is in place. Concentrating on 'mobile first' design, the navigation bar incorporates a clickable burger icon with a drop down menu on mobile. There is a burger icon at tablet size too, but when moving to monitor size the burger disappears and a navigation bar appears with options to navigate to pages; 'Blog' which is essentially the home page, 'About' or 'Book Makeover'. There is a clickable brand logo for all screen sizes that loads the blog page. See mobile and monitor screenshots below.
+
+#### Mobile navigation using burger menu
+
+<img src="docs/readme_images/mobile navigation bar.PNG">
+
+#### Monitor navigation bar
+
+<img src="docs/readme_images/monitor navigation bar.PNG">
+
+### Hero image
+The hero image shows the classical dance tradition 
+
+<img src="docs/readme_images/hero image.PNG">
+
+### Django alert messages
+
+Every time there is a change in data the user is alerted. For example when a comment is posted, when a comment is edited, when a comment is deleted, when a booking is created, when a booking is edited or when a booking is deleted. There is also an alert message displayed when a collaboration request is made. Below are 3 examples of alert messages, but there are many more shown throughout the site.
+
+#### Django alert message example 1
+
+The first example is a feedback notification that shows "successfully signed in as username" straight after signing in.
+
+<img src="docs/readme_images/signed in alert message.PNG">
+
+#### Django alert message example 2
+
+The second example states "booking submitted! you will be notified when confirmed.
+
+<img src="docs/readme_images/booking alert msg.PNG>
+
+#### Django alert message example 3
+
+The third example states "your booking has been deleted successfully!"
+
+<img src="docs/readme_images/booking deleted successfully.PNG">
+
+### Clear indication as to whether the user is logged in or out at all times
+
+The base html contains for whether the user is logged in or not and will display "You are logged in as username" or "You are not logged in" depending on the boolean state of authentication.
+
+#### Clear indication for when the user is logged in
+
+<img src="docs/readme_images/you are logged in.PNG">
+
+#### Clear indication for when the user is logged out
+
+<img src="docs/readme_images/not logged in.PNG">
+
+### A list of blog posts
+
+Individual blog posts are displayed under one another on mobile screens. On tablet screens there are 3 blog posts displayed in a row and 6 on a page, with the option to use a next and previous button. Large laptop screens and monitor screens have the same layout as tablet size only the pictures are bigger.
+
+<img src="docs/readme_images/list of blog post.PNG">
+
+### See an individual blog post in detail
+
+When a blog title or excerpt is clicked the post detail html is rendered displaying the same hero image that is on all pages, but also a mast head underneath the hero image with the blog title and an image that has been uploaded by a superuser. Underneath this the blog text can be seen. Underneath the blog text is a comment count, comments section and a form to add your own comment if you are a logged in user.
+
+<img src="docs/readme_images/post detail page.PNG">
+
+### Pagination
+
+Pagination makes a long list of blog posts more manageable for users. It is comprised of 'next' and 'prev' buttons. Six blogs are shown per page on this website.
+
+<img src="docs/readme_images/pagination.PNG">
+
+### Sign in form
+
+This is a crispy form that asks for username and password.
+
+<img src="docs/readme_images/sign in.PNG">
+
+### Register form (Sign up)
+
+This is a crispy form. I styled it with a light yellow background and I removed the bullet point dots that are normally present on the password instructions (e.g. your password must contain at least 8 characters). The username and password (x2) are required fields and the email is optional.
+
+<img src="docs/readme_images/registration page.PNG">
+
+### Sign out page
+
+The signout page is defensive. It asks the user 'Are you sure you would like to sign out?'
+
+<img src="docs/readme_images/sign out.PNG">
+
+### Booking
+
+An original custom model is contained in this original custom app. The app is called 'BOOKING' and it has its own template, models, form and views.
+
+<img src="docs/readme_images/booking edit and delete page.PNG">
+
+### View comments on posts
+
+A list of comments can be seen on individual posts when not logged in. However there is a note directing the user to 'Log in to leave a comment'. The user can create, read, edit and delete comments if they are logged in.
+
+<img src="docs/readme_images/view comments.PNG">
+
+### CRUD functionality on comments when logged in
+
+Full front end CRUD functionality is available on comments if the user is logged in. Every time data is created, edited or deleted a notification message pops up to give the user feedback.
+
+<img src="docs/readme_images/login to comment.PNG">
+
+### Footer
+
+This includes social media icons, contact details (email and phone number) and copyright.
+
+<img src="docs/readme_images/footer.PNG">
+
+### MoSCoW
+
+This project used the "MoSCoW" method to classify its features and requirements according to their importance towards a minimum viable product (MVP). "MoSCoW" stands for "Must have, Should have, Could have and Won't have," with each classification aiding in the prioritization of features. This method makes sure that essential components are tackled in priority order.
+
+<img src="docs/readme_images/mosco page.PNG">
+
 ## Wireframes
 
 ### Index page wireframes
@@ -164,6 +314,42 @@ Link to my Github [Project Board](https://github.com/users/SIMMI-K/projects/3/vi
 #### Monitor
 
 <img src="docs/readme_images/browser home wireframe.PNG">
+
+## Technology Used
+
+### Languages and framework
+
+- [HTML5](https://developer.mozilla.org/en-US/docs/Learn/HTML "link to html mozilla documentation")
+  was used to create content and structure
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS "link to css mozilla documentation")
+  was used to add custom styles
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript "link to javascript mozilla documentation") was used to dynamically reset the comment form if the reset button was clicked and to show a modal when the edit comment button was clicked
+- [Django](https://www.djangoproject.com/ "link to django docs homepage") was the python framework used to develop the site
+
+### Database
+
+- [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/ "link to postgresql from code institute") was used as the PostgreSQL database for this project
+
+### Technologies and tools
+
+- [VS Code](https://code.visualstudio.com/ "link to visual studio code webpage") was used as the ide for this whole project
+- [Cloudinary](https://cloudinary.com/ "link to cloudinary homepage") was used to host images
+- [GitHub](https://github.com/ "link to github webpage") was used to store the code files, README files and assets
+- [Git](https://git-scm.com/ "link to official git website") was used as a version control software to commit and push the code to the GitHub repository
+- [Heroku](https://id.heroku.com/login "link to Heroku login") was used to deploy the project
+- [Bootstrap](https://getbootstrap.com/ "link to official bootstrap website") was used to quickly layout, position and size critical website features
+[Google Fonts](https://fonts.google.com/ "link to official google fonts website") was used to import fonts
+- [Favicon Generator](https://favicon.io/favicon-generator/ "link to official favicon generator website") was used to make an 'DZ' shaped favicon
+- [Font Awesome](https://fontawesome.com/ "link to official font awesome website") was used for all icons
+- [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/overview/ "Link to official chrome developer tools website") was used for lighthouse testing, debugging and consistently checking responsiveness
+- [W3C Markup Validator](https://validator.w3.org/ "link to official html validator") was used to validate all live html
+- [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/ "link to official css validator") was used to validate CSS code
+- [JS Hint](https://jshint.com/ "link to official javascript validator") was used to validate JavaScript code
+- [Code Institute Python Linter](https://pep8ci.herokuapp.com/ "link to official python validator") was used to validate all python code
+- [Django Summernote](https://pypi.org/project/django-summernote/ "link to official summernote website") was used. This is a rich text editor plugin for Django
+- [Django Crispy Forms](https://pypi.org/project/django-crispy-forms/ "link to official crispy forms website") were used throughout the project to quickly create forms
+- [Chat-GPT](https://chat.openai.com/ "link to chat gpt") was used to create the text blog content. There are 9 blogs published on the DanceZone website and for each the following query was written into Chat
+-[Lucidchart]for the database schema was used.
 
 ### Entity relationship diagram
 
@@ -276,7 +462,7 @@ After account setup, the steps were as follows:
 - Deploy
 - After the first deployment you will see a message saying "your app was successfully deployed" and there will be a "view" button to take you to your deployed application
 
-The live link for this project can be found here - [DanceZone]()
+The live link for this project can be found here - [DanceZone](https://dance-zone-0cb3194ed2ff.herokuapp.com/)
 
 ### Fork this repository:
 
@@ -306,6 +492,9 @@ Note: The difference between clone and fork is, you need permissions to push bac
 
 [CHATGPT for many fixes, errors, codes, post descriptions]
 
+[Security_Key]
+
+I am aware that I accidently pushed security key to github but now I have removed from the settings.py and generated a new key to envy.py file.
 ## Acknowledgements
 
 Thank you to friends, family specially my 4yr son for showing a big cooperation during meetings.
