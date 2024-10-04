@@ -433,7 +433,7 @@ All python code was put through the [CI Python Linter](https://pep8ci.herokuapp.
 | Blog admin      |  <details><summary>Blog Admin</summary><img src="docs/readme_images/blog admin.py.PNG"></details>          | PASS   |
 ## Manual testing
 
-Link to spreadsheet[manual testing](docs/readme_images/dancezone testing US - Sheet1.pdf)
+Link to spreadsheet[manual testing] <a href="docs/readme_images/dancezone testing US - Sheet1.pdf" target="_blank"> manual testing spreadsheet</a>
 
 ## Deployment
 
